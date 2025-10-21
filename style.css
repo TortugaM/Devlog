@@ -174,11 +174,3 @@ li a {
     border-bottom: 1px solid #e9eaf0;
   }
 }
-
-/* ---------- Motion preference ---------- */
-@media (prefers-reduced-motion: reduce) {
-  * {
-    transition: none !important;
-    animation: none !important;
-  }
-}
