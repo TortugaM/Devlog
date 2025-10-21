@@ -148,3 +148,10 @@ li a{ font-weight: 700; }
   .container{ flex-direction: column; }
   .sidebar{ width: 100%; border-right: 0; border-bottom: 1px solid #e9eaf0; }
 }
+
+/* ---------- Motion preference ---------- */
+@media (prefers-reduced-motion: reduce){
+  *{ transition:none !important; animation:none !important; }
+}
+
+
