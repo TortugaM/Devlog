@@ -1,5 +1,6 @@
 import React from 'react';
 import { jsPDF } from 'jspdf';
+import { FileDown } from 'lucide-react';
 
 function Resume() {
   const downloadResume = () => {
@@ -125,11 +126,12 @@ function Resume() {
       <div className="card mb-xl">
         <h3 className="card-title">Professional Summary</h3>
         <p className="card-content">
-          Passionate software developer with experience in building modern web applications 
-          using React, JavaScript, and Node.js. Strong problem-solving skills and a commitment 
-          to writing clean, maintainable code. Eager to contribute to innovative projects and 
-          continue growing as a developer. Experienced in collaborating with cross-functional 
-          teams and delivering high-quality solutions.
+          With 7 years in customer-facing and operational roles, I excel at communication,
+           conflict resolution, and simplifying complex information. 
+           I'm developing strong technical skills in modern web technologies and analytics tools to support 
+           data driven decision making. My goal is to create solutions that improve user experience,
+            strengthen relationships, and support organizational growth.
+
         </p>
       </div>
 
@@ -139,22 +141,11 @@ function Resume() {
         <div className="card mb-md">
           <h4 className="card-title">i.c. Stars Internship Program</h4>
           <div className="card-subtitle">Technology Leadership Training</div>
-          <div className="card-meta mb-sm">2023 - 2024</div>
+          <div className="card-meta mb-sm">2025 - Present</div>
           <p className="card-content">
             Intensive technology and leadership training program focused on full-stack 
             development, business acumen, and professional skills. Completed hands-on 
             projects and real-world client work.
-          </p>
-        </div>
-
-        <div className="card mb-md">
-          <h4 className="card-title">Bachelor of Science in Computer Science</h4>
-          <div className="card-subtitle">University Name</div>
-          <div className="card-meta mb-sm">2019 - 2023</div>
-          <p className="card-content">
-            Studied computer science fundamentals including algorithms, data structures, 
-            software engineering, and web development. Participated in hackathons and 
-            coding competitions.
           </p>
         </div>
       </div>
@@ -163,9 +154,9 @@ function Resume() {
       <h3 className="card-title mb-md">Professional Experience</h3>
       <div className="mb-xl">
         <div className="card mb-md">
-          <h4 className="card-title">Software Developer</h4>
-          <div className="card-subtitle">Tech Company Inc.</div>
-          <div className="card-meta mb-sm">January 2024 - Present</div>
+          <h4 className="card-title">Lead Drive</h4>
+          <div className="card-subtitle">Midwest Industrial Metals</div>
+          <div className="card-meta mb-sm">January 2023 - June 2025</div>
           <div className="card-content">
             <ul>
               <li>Developed and maintained web applications using React and Node.js</li>
@@ -177,9 +168,9 @@ function Resume() {
         </div>
 
         <div className="card mb-md">
-          <h4 className="card-title">Junior Developer</h4>
-          <div className="card-subtitle">Startup Solutions LLC</div>
-          <div className="card-meta mb-sm">June 2023 - December 2023</div>
+          <h4 className="card-title">i.c. Stars Chicago</h4>
+          <div className="card-subtitle">Internship for Software Development</div>
+          <div className="card-meta mb-sm">June 2025 - Present</div>
           <div className="card-content">
             <ul>
               <li>Built responsive user interfaces using modern JavaScript frameworks</li>
@@ -237,7 +228,7 @@ function Resume() {
       {/* Download Button */}
       <div className="text-center">
         <button className="btn btn-primary" onClick={downloadResume}>
-          📄 Download Resume (PDF)
+          <FileDown size={18} style={{ marginRight: '8px' }} /> Download Resume (PDF)
         </button>
       </div>
     </div>

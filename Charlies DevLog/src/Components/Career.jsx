@@ -19,8 +19,8 @@ function Career() {
               <ul>
                 <li>Assistes in maintaining web applications using React and Node.js</li>
                 <li>Collaborated with cross-functional teams to deliver high-quality software solutions</li>
-                <li>Implemented responsive designs and optimized application performance</li>
-                <li>Participated in code reviews and mentored junior developers</li>
+                <li>Implemented responsive designs and optimized application for higher performance</li>
+                <li>Participated in code reviews and learned from my mistakes</li>
               </ul>
             </div>
           </div>
@@ -46,15 +46,15 @@ function Career() {
         {/* Experience 3 */}
         <div className="timeline-item">
           <div className="card">
-            <h3 className="card-title">Accounts Manager</h3>
-            <div className="card-subtitle">Allstate</div>
-            <div className="card-meta">2018 - Present</div>
+            <h3 className="card-title">Lead Driver</h3>
+            <div className="card-subtitle">Twenty-Twenty Logistics</div>
+            <div className="card-meta">2021 - 2023</div>
             <div className="card-content">
               <ul>
-                <li>Built responsive user interfaces using modern JavaScript frameworks</li>
-                <li>Worked with RESTful APIs and integrated third-party services</li>
-                <li>Debugged and resolved technical issues in production environments</li>
-                <li>Contributed to agile development processes and sprint planning</li>
+                <li>Ensured equipment functionality through regular maintenance, improving service reliability and safety.</li>
+                <li>Ensure 99% deliveries on time; coordinate with management to plan safe routes and mitigate safety concerns.</li>
+                <li>Regularly performed tractor/trailer maintenance and inspections within DOT and OSHA guidelines avoiding potential safety hazards.</li>
+                <li>Trained new Drivers in accordance with DOT and OSHA guidelines ensuring compliance and safety.</li>
               </ul>
             </div>
           </div>
@@ -68,10 +68,10 @@ function Career() {
             <div className="card-meta">2023 - June 2025</div>
             <div className="card-content">
               <ul>
-                <li>Assisted in developing web applications and internal tools</li>
-                <li>Learned best practices in software development and version control</li>
-                <li>Participated in daily standups and team collaboration sessions</li>
-                <li>Gained hands-on experience with modern development workflows</li>
+                <li>Ensured equipment functionality through regular maintenance, improving service reliability and safety.</li>
+                <li>Ensure 99% deliveries on time; coordinate with management to plan safe routes and mitigate safety concerns.</li>
+                <li>Regularly performed tractor/trailer maintenance and inspections within DOT and OSHA guidelines avoiding potential safety hazards.</li>
+                <li>Trained new Drivers in accordance with DOT and OSHA guidelines ensuring compliance and safety.</li>
               </ul>
             </div>
           </div>

@@ -7,6 +7,8 @@ import Tech from "./Components/Tech.jsx";
 import BusinessLeadership from "./Components/Business&Leadership.jsx";
 import Wellness from "./Components/Wellness.jsx";
 import Resume from "./Components/Resume.jsx";
+import PowerBi from "./Components/PowerBi.jsx";
+import { Github, Linkedin, Star, Smile, Moon, Sun, Hand, X, PenSquare, Save } from "lucide-react";
 
 function App() {
   const [dark, setDark] = useState(() => {
@@ -37,21 +39,21 @@ function App() {
       {
         id: 1,
         title: "Starting My Journey at i.c. Stars",
-        date: "2025-09-10",
+        date: "2025-07-09",
         content:
           "Today was my first day at i.c. Stars and honestly, I'm both excited and a bit nervous. The program looks intense but I know it's going to push me to grow. Can't wait to see where this takes me!",
       },
       {
         id: 2,
         title: "React is Actually Pretty Cool",
-        date: "2025-12-10",
+        date: "2025-20-09",
         content:
-          "Spent the day diving into React components. At first it seemed complicated, but once it clicked, I realized how powerful this is. Being able to reuse components is a game-changer. Still wrapping my head around props and state, but I'm getting there!",
+          "Spent the day diving into DAX formulas. At first it seemed complicated, but once it clicked, I realized how powerful this is. Still wrapping my head around DAX, but I'm getting there!",
       },
       {
         id: 3,
         title: "Small Wins Matter",
-        date: "2025-12-10",
+        date: "2025-30-09",
         content:
           "Got my first component working without errors today. It's a simple card component, but seeing it render exactly how I wanted felt amazing. These small victories keep me motivated to keep learning.",
       },
@@ -208,6 +210,14 @@ function App() {
                 Resume
               </a>
             </li>
+            <li>
+              <a
+                onClick={() => changeView("powerbi")}
+                className={currentView === "powerbi" ? "active" : ""}
+              >
+                PowerBI Resume
+              </a>
+            </li>
           </ul>
         </nav>
 
@@ -220,7 +230,7 @@ function App() {
               className="social-link"
               title="GitHub"
             >
-              🔗
+              <Github size={20} />
             </a>
             <a
               href="https://www.linkedin.com/"
@@ -229,7 +239,7 @@ function App() {
               className="social-link"
               title="LinkedIn"
             >
-              💼
+              <Linkedin size={20} />
             </a>
             <a
               href="https://www.icstars.org/"
@@ -238,18 +248,21 @@ function App() {
               className="social-link"
               title="i.c. Stars"
             >
-              ⭐
+              <Star size={20} />
             </a>
             <button
               onClick={showRandomJoke}
               className="social-link"
               title="Tech Joke"
             >
-              😂
+              <Smile size={20} />
             </button>
           </div>
           <button className="theme-toggle" onClick={toggleTheme}>
-            {dark ? "☀️ Light Mode" : "🌙 Dark Mode"}
+            {dark ? <Sun size={18} /> : <Moon size={18} />}
+            <span style={{ marginLeft: '8px' }}>
+              {dark ? "Light Mode" : "Dark Mode"}
+            </span>
           </button>
         </div>
       </aside>
@@ -261,7 +274,7 @@ function App() {
           <>
             <div className="hero">
               <h1 className="hero-title">
-                Hey! I'm Charlie 👋
+                Hey! I'm Charlie <Hand className="inline-icon" size={40} style={{ verticalAlign: 'middle', marginLeft: '0.5rem', marginBottom: '0.5rem' }} />
               </h1>
               <p className="hero-subtitle">
                 This is my personal devlog where I'm documenting everything I'm learning 
@@ -269,7 +282,15 @@ function App() {
                 everything in between. Feel free to look around!
               </p>
               <button className="hero-cta" onClick={toggleEntryForm}>
-                {showEntryForm ? "❌ Never mind" : "✍️ Write a new entry"}
+                {showEntryForm ? (
+                  <>
+                    <X size={20} style={{ marginRight: '8px' }} /> Never mind
+                  </>
+                ) : (
+                  <>
+                    <PenSquare size={20} style={{ marginRight: '8px' }} /> Write a new entry
+                  </>
+                )}
               </button>
             </div>
 
@@ -298,7 +319,7 @@ function App() {
                   ></textarea>
                 </div>
                 <button className="btn btn-primary" onClick={handleAddEntry}>
-                  📝 Save this entry
+                  <Save size={18} style={{ marginRight: '8px' }} /> Save this entry
                 </button>
               </div>
             )}
@@ -357,6 +378,9 @@ function App() {
 
         {/* Resume View */}
         {currentView === "resume" && <Resume />}
+
+        {/* PowerBI View */}
+        {currentView === "powerbi" && <PowerBi />}
       </main>
     </div>
   );

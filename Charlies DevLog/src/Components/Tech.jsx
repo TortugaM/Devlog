@@ -13,9 +13,9 @@ function Tech() {
         <h3 className="card-title mb-md">Frontend Development</h3>
         <div className="skill-tags">
           <span className="skill-tag">React</span>
-          <span className="skill-tag">JavaScript (ES6+)</span>
+          <span className="skill-tag">JavaScript</span>
           <span className="skill-tag">HTML5</span>
-          <span className="skill-tag">CSS3</span>
+          <span className="skill-tag">CSS</span>
           <span className="skill-tag">TypeScript</span>
           <span className="skill-tag">Responsive Design</span>
         </div>
@@ -29,7 +29,7 @@ function Tech() {
           <span className="skill-tag">Express</span>
           <span className="skill-tag">SQL</span>
           <span className="skill-tag">REST APIs</span>
-          <span className="skill-tag">MongoDB</span>
+          <span className="skill-tag">Postman</span>
         </div>
       </div>
 
@@ -39,10 +39,10 @@ function Tech() {
         <div className="skill-tags">
           <span className="skill-tag">Git & GitHub</span>
           <span className="skill-tag">VS Code</span>
-          <span className="skill-tag">npm/yarn</span>
+          <span className="skill-tag">antigravity</span>
           <span className="skill-tag">Vite</span>
           <span className="skill-tag">Postman</span>
-          <span className="skill-tag">Chrome DevTools</span>
+          <span className="skill-tag">Power Bi</span>
         </div>
       </div>
 
@@ -51,11 +51,11 @@ function Tech() {
         <h3 className="card-title mb-md">Currently Learning</h3>
         <div className="skill-tags">
           <span className="skill-tag">Next.js</span>
-          <span className="skill-tag">GraphQL</span>
-          <span className="skill-tag">Docker</span>
+          <span className="skill-tag">Comp TIA</span>
+          <span className="skill-tag">Azure</span>
           <span className="skill-tag">AWS</span>
-          <span className="skill-tag">Testing (Jest/Vitest)</span>
-          <span className="skill-tag">CI/CD</span>
+          <span className="skill-tag">Prompting</span>
+          <span className="skill-tag">AI</span>
         </div>
       </div>
 
@@ -72,20 +72,20 @@ function Tech() {
         </div>
 
         <div className="card">
-          <h4 className="card-title">Task Management App</h4>
+          <h4 className="card-title">Dash by Metis</h4>
           <p className="card-meta mb-md">React, Node.js, MongoDB</p>
           <p className="card-content">
-            Full-stack application for managing tasks and projects. Includes user 
-            authentication, real-time updates, and responsive design.
+            Full-stack application for collecting feedback from multiple sources in one place.
+            App created for United Airlines and WINNER for C58. https://dash-by-metis.netlify.app/
           </p>
         </div>
 
         <div className="card">
-          <h4 className="card-title">Weather Dashboard</h4>
-          <p className="card-meta mb-md">JavaScript, API Integration</p>
+          <h4 className="card-title">Resume BI</h4>
+          <p className="card-meta mb-md">Power BI</p>
           <p className="card-content">
-            Interactive weather application using external APIs. Features location 
-            search, 5-day forecast, and dynamic UI updates.
+            Part of my resume interpreted in a power bi format. Something simple.
+            Feel free to cheeckout the Power BI dashboard in the Dash by Metis project.
           </p>
         </div>
       </div>

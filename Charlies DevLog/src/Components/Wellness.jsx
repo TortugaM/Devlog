@@ -1,4 +1,5 @@
-import React from 'react';
+import React from "react";
+import { Dumbbell, Brain, BookOpen, Moon, Camera, Mountain, Music, Utensils, Plane, Gamepad2 } from "lucide-react";
 
 function Wellness() {
   return (
@@ -12,7 +13,9 @@ function Wellness() {
       <h3 className="card-title mb-md">Wellness Practices</h3>
       <div className="grid grid-2 mb-xl">
         <div className="card">
-          <h4 className="card-subtitle mb-sm">💪 Physical Fitness</h4>
+          <h4 className="card-subtitle mb-sm" style={{ display: 'flex', alignItems: 'center' }}>
+            <Dumbbell size={20} color="var(--accent)" style={{ marginRight: '8px' }} /> Physical Fitness
+          </h4>
           <p className="card-content">
             Regular exercise routine including strength training and cardio to maintain 
             physical health and energy levels.
@@ -20,7 +23,9 @@ function Wellness() {
         </div>
 
         <div className="card">
-          <h4 className="card-subtitle mb-sm">🧘 Mindfulness</h4>
+          <h4 className="card-subtitle mb-sm" style={{ display: 'flex', alignItems: 'center' }}>
+            <Brain size={20} color="var(--accent)" style={{ marginRight: '8px' }} /> Mindfulness
+          </h4>
           <p className="card-content">
             Daily meditation and mindfulness practices to reduce stress and improve 
             focus and mental clarity.
@@ -28,7 +33,9 @@ function Wellness() {
         </div>
 
         <div className="card">
-          <h4 className="card-subtitle mb-sm">📚 Continuous Learning</h4>
+          <h4 className="card-subtitle mb-sm" style={{ display: 'flex', alignItems: 'center' }}>
+            <BookOpen size={20} color="var(--accent)" style={{ marginRight: '8px' }} /> Continuous Learning
+          </h4>
           <p className="card-content">
             Reading books, taking courses, and staying updated with industry trends 
             to grow both personally and professionally.
@@ -36,7 +43,9 @@ function Wellness() {
         </div>
 
         <div className="card">
-          <h4 className="card-subtitle mb-sm">😴 Rest & Recovery</h4>
+          <h4 className="card-subtitle mb-sm" style={{ display: 'flex', alignItems: 'center' }}>
+            <Moon size={20} color="var(--accent)" style={{ marginRight: '8px' }} /> Rest & Recovery
+          </h4>
           <p className="card-content">
             Prioritizing quality sleep and regular breaks to maintain productivity 
             and prevent burnout.
@@ -48,7 +57,9 @@ function Wellness() {
       <h3 className="card-title mb-md">Hobbies & Interests</h3>
       <div className="grid grid-3 mb-xl">
         <div className="card">
-          <h4 className="card-subtitle mb-sm">📸 Sports</h4>
+          <h4 className="card-subtitle mb-sm" style={{ display: 'flex', alignItems: 'center' }}>
+            <Camera size={20} color="var(--accent)" style={{ marginRight: '8px' }} /> Sports
+          </h4>
           <p className="card-content">
             I love to play ALL sports! I have played everything from water polo to chess.
             Sports have been a great way to stay healthy and meet new people. 
@@ -57,37 +68,38 @@ function Wellness() {
         </div>
 
         <div className="card">
-          <h4 className="card-subtitle mb-sm">🥾 Hiking</h4>
+          <h4 className="card-subtitle mb-sm" style={{ display: 'flex', alignItems: 'center' }}>
+            <Mountain size={20} color="var(--accent)" style={{ marginRight: '8px' }} /> Acquiring Certs
+          </h4>
           <p className="card-content">
-            Exploring nature trails and enjoying outdoor adventures on weekends.
+            Ever since starting i.c. Stars I have been making a strenuous effort to accelerate my growth through certificats.
           </p>
         </div>
 
         <div className="card">
-          <h4 className="card-subtitle mb-sm">🎵 Music</h4>
+          <h4 className="card-subtitle mb-sm" style={{ display: 'flex', alignItems: 'center' }}>
+            <Music size={20} color="var(--accent)" style={{ marginRight: '8px' }} /> Music
+          </h4>
           <p className="card-content">
-            Listening to various genres and discovering new artists across different platforms.
+            Listening to various genres, I feel like music connects us all and allows us to share deep thoughts and emotions in just a few minutes. 
           </p>
         </div>
 
         <div className="card">
-          <h4 className="card-subtitle mb-sm">🍳 Cooking</h4>
+          <h4 className="card-subtitle mb-sm" style={{ display: 'flex', alignItems: 'center' }}>
+            <Utensils size={20} color="var(--accent)" style={{ marginRight: '8px' }} /> Cooking
+          </h4>
           <p className="card-content">
-            Experimenting with new recipes and cuisines as a creative outlet.
+            Experimenting with new recipes and getting a low of help from my mom; not to be bias but shes kind of a pro. 
           </p>
         </div>
 
         <div className="card">
-          <h4 className="card-subtitle mb-sm">✈️ Travel</h4>
+          <h4 className="card-subtitle mb-sm" style={{ display: 'flex', alignItems: 'center' }}>
+            <Plane size={20} color="var(--accent)" style={{ marginRight: '8px' }} /> Travel
+          </h4>
           <p className="card-content">
-            Exploring new places and experiencing different cultures when possible.
-          </p>
-        </div>
-
-        <div className="card">
-          <h4 className="card-subtitle mb-sm">🎮 Gaming</h4>
-          <p className="card-content">
-            Enjoying video games as a way to unwind and connect with friends.
+            I love traveling ever since I was over the road as a truck driver.
           </p>
         </div>
       </div>
