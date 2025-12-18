@@ -8,7 +8,18 @@ import BusinessLeadership from "./Components/Business&Leadership.jsx";
 import Wellness from "./Components/Wellness.jsx";
 import Resume from "./Components/Resume.jsx";
 import PowerBi from "./Components/PowerBi.jsx";
-import { Github, Linkedin, Star, Smile, Moon, Sun, Hand, X, PenSquare, Save } from "lucide-react";
+import {
+  Github,
+  Linkedin,
+  Star,
+  Smile,
+  Moon,
+  Sun,
+  Hand,
+  X,
+  PenSquare,
+  Save,
+} from "lucide-react";
 
 function App() {
   const [dark, setDark] = useState(() => {
@@ -92,24 +103,24 @@ function App() {
       alert("Please fill in both title and content!");
       return;
     }
-    
+
     const newCard = {
       id: Date.now(), // Use timestamp for unique ID
       title: newEntryTitle,
       date: new Date().toISOString().split("T")[0],
       content: newEntryContent,
     };
-    
+
     const updatedCards = [newCard, ...logCards];
     setLogCards(updatedCards);
-    
+
     // Save to localStorage
     try {
       localStorage.setItem("devLogEntries", JSON.stringify(updatedCards));
     } catch (e) {
       console.error("Error saving log entries:", e);
     }
-    
+
     setNewEntryTitle("");
     setNewEntryContent("");
     setShowEntryForm(false);
@@ -139,9 +150,9 @@ function App() {
       "What's a programmer's favorite snack? Microchips! 🍟",
       "Why did the database administrator leave his wife? She had one-to-many relationships! 💔",
       "What do you get when you cross a computer and a lifeguard? A screensaver! 🏊",
-      "Why was the JavaScript developer sad? Because he didn't Node how to Express himself! 😢"
+      "Why was the JavaScript developer sad? Because he didn't Node how to Express himself! 😢",
     ];
-    
+
     const randomJoke = techJokes[Math.floor(Math.random() * techJokes.length)];
     alert(randomJoke);
   }
@@ -224,7 +235,7 @@ function App() {
         <div className="sidebar-footer">
           <div className="social-links">
             <a
-              href="https://github.com/TortugaM/Devlog"
+              href="https://github.com/TortugaM"
               target="_blank"
               rel="noopener noreferrer"
               className="social-link"
@@ -260,7 +271,7 @@ function App() {
           </div>
           <button className="theme-toggle" onClick={toggleTheme}>
             {dark ? <Sun size={18} /> : <Moon size={18} />}
-            <span style={{ marginLeft: '8px' }}>
+            <span style={{ marginLeft: "8px" }}>
               {dark ? "Light Mode" : "Dark Mode"}
             </span>
           </button>
@@ -274,21 +285,31 @@ function App() {
           <>
             <div className="hero">
               <h1 className="hero-title">
-                Hey! I'm Charlie <Hand className="inline-icon" size={40} style={{ verticalAlign: 'middle', marginLeft: '0.5rem', marginBottom: '0.5rem' }} />
+                Hey! I'm Charlie{" "}
+                <Hand
+                  className="inline-icon"
+                  size={40}
+                  style={{
+                    verticalAlign: "middle",
+                    marginLeft: "0.5rem",
+                    marginBottom: "0.5rem",
+                  }}
+                />
               </h1>
               <p className="hero-subtitle">
-                This is my personal devlog where I'm documenting everything I'm learning 
-                at i.c. Stars. It's a mix of wins, struggles, random thoughts, and 
-                everything in between. Feel free to look around!
+                This is my personal devlog where I'm documenting everything I'm
+                learning at i.c. Stars. It's a mix of wins, struggles, random
+                thoughts, and everything in between. Feel free to look around!
               </p>
               <button className="hero-cta" onClick={toggleEntryForm}>
                 {showEntryForm ? (
                   <>
-                    <X size={20} style={{ marginRight: '8px' }} /> Never mind
+                    <X size={20} style={{ marginRight: "8px" }} /> Never mind
                   </>
                 ) : (
                   <>
-                    <PenSquare size={20} style={{ marginRight: '8px' }} /> Write a new entry
+                    <PenSquare size={20} style={{ marginRight: "8px" }} /> Write
+                    a new entry
                   </>
                 )}
               </button>
@@ -319,7 +340,8 @@ function App() {
                   ></textarea>
                 </div>
                 <button className="btn btn-primary" onClick={handleAddEntry}>
-                  <Save size={18} style={{ marginRight: '8px' }} /> Save this entry
+                  <Save size={18} style={{ marginRight: "8px" }} /> Save this
+                  entry
                 </button>
               </div>
             )}
@@ -328,25 +350,27 @@ function App() {
             <div className="section">
               <h2 className="section-title">A bit about me</h2>
               <div className="about-section">
-                <img 
-                  src={headshot} 
-                  alt="Charlie Mejia" 
+                <img
+                  src={headshot}
+                  alt="Charlie Mejia"
                   className="about-image"
                 />
                 <div className="about-content">
                   <p className="mb-md">
-                    So here's the deal - I'm currently wrapping up my time at i.c. Stars, 
-                    where I've been learning everything from tech to business analysis to leadership. 
-                    It's been quite the ride!
+                    So here's the deal - I'm currently wrapping up my time at
+                    i.c. Stars, where I've been learning everything from tech to
+                    business analysis to leadership. It's been quite the ride!
                   </p>
                   <p className="mb-md">
-                    Before this, I spent years as an account manager at Allstate, plus some time 
-                    in other industries. All that experience taught me how to solve problems and 
-                    work with people - skills that translate surprisingly well to tech.
+                    Before this, I spent years as an account manager at
+                    Allstate, plus some time in other industries. All that
+                    experience taught me how to solve problems and work with
+                    people - skills that translate surprisingly well to tech.
                   </p>
                   <p>
-                    When I'm not coding, you'll probably find me playing sports (I'm pretty competitive), 
-                    or thinking about my next adventure. This devlog is basically my way of keeping track 
+                    When I'm not coding, you'll probably find me playing sports
+                    (I'm pretty competitive), or thinking about my next
+                    adventure. This devlog is basically my way of keeping track
                     of everything I'm learning and figuring out along the way.
                   </p>
                 </div>
